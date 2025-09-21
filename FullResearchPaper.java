@@ -1,15 +1,17 @@
-public class FullResearchPaper implements Researchpaper {
+public class FullResearchPaper implements Researchpaper{
     private String title;
     private String author;
 
-    public FullResearchPaper(String title, String author) {
+    FullResearchPaper(String title, String author){
         this.title = title;
         this.author = author;
     }
 
-    public void view() {
-        System.out.println("Viewing full research paper:");
-        System.out.println("Title: " + title);
-        System.out.println("Author: " + author);
+    @Override
+    public void view(){
+        System.out.println("Loading PDF of");
+        System.out.println("Title :" + title);
+        System.out.println("author :" + author);
     }
+
 }
